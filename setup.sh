@@ -1,11 +1,19 @@
 #!/bin/bash
 apt-get update && apt-get dist-upgrade -y
-apt-get install -y kitty git build-essential curl ca-certificates gnupg
+apt-get install -y kitty git build-essential curl ca-certificates gnupg fonts-firacode
 
 # nvm & node
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 source ~/.nvm/nvm.sh
 nvm install node
+
+# bun
+curl -fsSL https://bun.sh/install | bash
+
+# rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+rustup update
+
 # go
 wget https://go.dev/dl/go1.21.5.linux-amd64.tar.gz
 rm -rf /usr/local/go && tar -C /usr/local -xzf go1.21.5.linux-amd64.tar.gz
