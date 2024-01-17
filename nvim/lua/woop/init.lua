@@ -1,6 +1,7 @@
 vim.g.mapleader = ","
 vim.keymap.set("n", "<leader>ee", vim.cmd.Ex)
 vim.keymap.set("n", "<leader>te", function() vim.cmd('tabedit .') end)
+vim.keymap.set("n", "<leader>wa", function() vim.cmd('wa') end)
 vim.opt.guicursor = ""
 
 vim.opt.nu = false
