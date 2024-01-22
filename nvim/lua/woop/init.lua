@@ -1,11 +1,15 @@
 vim.g.mapleader = ","
 vim.keymap.set("n", "<leader>ee", vim.cmd.Ex)
 vim.keymap.set("n", "<leader>te", function() vim.cmd('tabedit .') end)
+vim.keymap.set("n", "<C-PageDown>", function() vim.cmd('tabNext') end)
+vim.keymap.set("n", "<C-PageUp>", function() vim.cmd('tabprevious') end)
 vim.keymap.set("n", "<leader>wa", function() vim.cmd('wa') end)
+vim.keymap.set("n", "<leader>bb", function() vim.cmd('Neotree') end)
+vim.keymap.set("n", "<leader>bc", function() vim.cmd('Neotree close') end)
 vim.opt.guicursor = ""
 
 vim.opt.nu = false
-vim.opt.relativenumber = false
+vim.opt.relativenumber = true
 vim.opt.number = true
 
 vim.opt.tabstop = 4
