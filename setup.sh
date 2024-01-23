@@ -38,3 +38,5 @@ wget https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.
 tar -C /opt -xzf nvim-linux64.tar.gz
 rm nvim-linux64.tar.gz
 
+# install rip grep https://github.com/BurntSushi/ripgrep
+# install a nerdfont https://www.nerdfonts.com/
