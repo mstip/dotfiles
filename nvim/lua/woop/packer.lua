@@ -44,6 +44,8 @@ use {
     }
   }
 
-----use('mattn/emmet-vim')
-
+use {
+    'crispgm/nvim-tabline',
+    requires = { 'nvim-tree/nvim-web-devicons' }, -- optional
+}
 end)

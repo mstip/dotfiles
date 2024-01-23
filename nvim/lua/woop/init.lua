@@ -1,5 +1,5 @@
 vim.g.mapleader = ","
-vim.keymap.set("n", "<leader>ee", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>ee", function() vim.cmd('Neotree .') end)
 vim.keymap.set("n", "<leader>te", function() vim.cmd('tabedit .') end)
 vim.keymap.set("n", "<C-PageDown>", function() vim.cmd('tabNext') end)
 vim.keymap.set("n", "<C-PageUp>", function() vim.cmd('tabprevious') end)
